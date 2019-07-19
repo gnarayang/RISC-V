@@ -1,0 +1,18 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building an n-bit adder using n full adders
+
+
+`include "full_adder.vl"
+ 
+module nbitadd(output [7:0] sum, output cout, input cin, input [7:0] a, b);
+  parameter n = 8;
+  wire [n-1:1] c;
+
+  full_adder fa0(a[0], b[0], cin, sum[0], c[1] );
+  full_adder fa[n-2:1]( a[n-2:1], b[n-2:1], c[n-2:1],sum[n-2:1], c[n-1:2]);
+  full_adder fa15( a[n-1], b[n-1], c[n-1], sum[n-1], cout);
+
+
+endmodule
+
+

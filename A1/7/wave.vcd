@@ -1,0 +1,379 @@
+$date
+	Mon Oct 15 20:27:26 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module d_latch_tb $end
+$var wire 32 ! q [31:0] $end
+$var reg 1 " clk $end
+$var reg 32 # d [31:0] $end
+$var reg 1 $ reset $end
+$scope module DUT[0] $end
+$var wire 1 " clock $end
+$var wire 1 % d $end
+$var wire 1 $ reset $end
+$var reg 1 & q $end
+$upscope $end
+$scope module DUT[1] $end
+$var wire 1 " clock $end
+$var wire 1 ' d $end
+$var wire 1 $ reset $end
+$var reg 1 ( q $end
+$upscope $end
+$scope module DUT[2] $end
+$var wire 1 " clock $end
+$var wire 1 ) d $end
+$var wire 1 $ reset $end
+$var reg 1 * q $end
+$upscope $end
+$scope module DUT[3] $end
+$var wire 1 " clock $end
+$var wire 1 + d $end
+$var wire 1 $ reset $end
+$var reg 1 , q $end
+$upscope $end
+$scope module DUT[4] $end
+$var wire 1 " clock $end
+$var wire 1 - d $end
+$var wire 1 $ reset $end
+$var reg 1 . q $end
+$upscope $end
+$scope module DUT[5] $end
+$var wire 1 " clock $end
+$var wire 1 / d $end
+$var wire 1 $ reset $end
+$var reg 1 0 q $end
+$upscope $end
+$scope module DUT[6] $end
+$var wire 1 " clock $end
+$var wire 1 1 d $end
+$var wire 1 $ reset $end
+$var reg 1 2 q $end
+$upscope $end
+$scope module DUT[7] $end
+$var wire 1 " clock $end
+$var wire 1 3 d $end
+$var wire 1 $ reset $end
+$var reg 1 4 q $end
+$upscope $end
+$scope module DUT[8] $end
+$var wire 1 " clock $end
+$var wire 1 5 d $end
+$var wire 1 $ reset $end
+$var reg 1 6 q $end
+$upscope $end
+$scope module DUT[9] $end
+$var wire 1 " clock $end
+$var wire 1 7 d $end
+$var wire 1 $ reset $end
+$var reg 1 8 q $end
+$upscope $end
+$scope module DUT[10] $end
+$var wire 1 " clock $end
+$var wire 1 9 d $end
+$var wire 1 $ reset $end
+$var reg 1 : q $end
+$upscope $end
+$scope module DUT[11] $end
+$var wire 1 " clock $end
+$var wire 1 ; d $end
+$var wire 1 $ reset $end
+$var reg 1 < q $end
+$upscope $end
+$scope module DUT[12] $end
+$var wire 1 " clock $end
+$var wire 1 = d $end
+$var wire 1 $ reset $end
+$var reg 1 > q $end
+$upscope $end
+$scope module DUT[13] $end
+$var wire 1 " clock $end
+$var wire 1 ? d $end
+$var wire 1 $ reset $end
+$var reg 1 @ q $end
+$upscope $end
+$scope module DUT[14] $end
+$var wire 1 " clock $end
+$var wire 1 A d $end
+$var wire 1 $ reset $end
+$var reg 1 B q $end
+$upscope $end
+$scope module DUT[15] $end
+$var wire 1 " clock $end
+$var wire 1 C d $end
+$var wire 1 $ reset $end
+$var reg 1 D q $end
+$upscope $end
+$scope module DUT[16] $end
+$var wire 1 " clock $end
+$var wire 1 E d $end
+$var wire 1 $ reset $end
+$var reg 1 F q $end
+$upscope $end
+$scope module DUT[17] $end
+$var wire 1 " clock $end
+$var wire 1 G d $end
+$var wire 1 $ reset $end
+$var reg 1 H q $end
+$upscope $end
+$scope module DUT[18] $end
+$var wire 1 " clock $end
+$var wire 1 I d $end
+$var wire 1 $ reset $end
+$var reg 1 J q $end
+$upscope $end
+$scope module DUT[19] $end
+$var wire 1 " clock $end
+$var wire 1 K d $end
+$var wire 1 $ reset $end
+$var reg 1 L q $end
+$upscope $end
+$scope module DUT[20] $end
+$var wire 1 " clock $end
+$var wire 1 M d $end
+$var wire 1 $ reset $end
+$var reg 1 N q $end
+$upscope $end
+$scope module DUT[21] $end
+$var wire 1 " clock $end
+$var wire 1 O d $end
+$var wire 1 $ reset $end
+$var reg 1 P q $end
+$upscope $end
+$scope module DUT[22] $end
+$var wire 1 " clock $end
+$var wire 1 Q d $end
+$var wire 1 $ reset $end
+$var reg 1 R q $end
+$upscope $end
+$scope module DUT[23] $end
+$var wire 1 " clock $end
+$var wire 1 S d $end
+$var wire 1 $ reset $end
+$var reg 1 T q $end
+$upscope $end
+$scope module DUT[24] $end
+$var wire 1 " clock $end
+$var wire 1 U d $end
+$var wire 1 $ reset $end
+$var reg 1 V q $end
+$upscope $end
+$scope module DUT[25] $end
+$var wire 1 " clock $end
+$var wire 1 W d $end
+$var wire 1 $ reset $end
+$var reg 1 X q $end
+$upscope $end
+$scope module DUT[26] $end
+$var wire 1 " clock $end
+$var wire 1 Y d $end
+$var wire 1 $ reset $end
+$var reg 1 Z q $end
+$upscope $end
+$scope module DUT[27] $end
+$var wire 1 " clock $end
+$var wire 1 [ d $end
+$var wire 1 $ reset $end
+$var reg 1 \ q $end
+$upscope $end
+$scope module DUT[28] $end
+$var wire 1 " clock $end
+$var wire 1 ] d $end
+$var wire 1 $ reset $end
+$var reg 1 ^ q $end
+$upscope $end
+$scope module DUT[29] $end
+$var wire 1 " clock $end
+$var wire 1 _ d $end
+$var wire 1 $ reset $end
+$var reg 1 ` q $end
+$upscope $end
+$scope module DUT[30] $end
+$var wire 1 " clock $end
+$var wire 1 a d $end
+$var wire 1 $ reset $end
+$var reg 1 b q $end
+$upscope $end
+$scope module DUT[31] $end
+$var wire 1 " clock $end
+$var wire 1 c d $end
+$var wire 1 $ reset $end
+$var reg 1 d q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xd
+0c
+xb
+0a
+x`
+0_
+x^
+0]
+x\
+0[
+xZ
+0Y
+xX
+0W
+xV
+0U
+xT
+0S
+xR
+0Q
+xP
+0O
+xN
+0M
+xL
+0K
+xJ
+0I
+xH
+0G
+xF
+0E
+xD
+0C
+xB
+0A
+x@
+0?
+x>
+0=
+x<
+0;
+x:
+09
+x8
+07
+x6
+05
+x4
+03
+x2
+01
+x0
+0/
+x.
+0-
+x,
+0+
+x*
+0)
+x(
+0'
+x&
+0%
+1$
+b0 #
+0"
+bx !
+$end
+#5
+1%
+1'
+1+
+15
+17
+1=
+1S
+1W
+1[
+1]
+b11010100000000001001100001011 #
+#10
+0d
+0b
+0`
+1^
+1\
+0Z
+1X
+0V
+1T
+0R
+0P
+0N
+0L
+0J
+0H
+0F
+0D
+0B
+0@
+1>
+0<
+0:
+18
+16
+04
+02
+00
+0.
+1,
+0*
+1(
+b11010100000000001001100001011 !
+1&
+1"
+#20
+0"
+#30
+0(
+1*
+0,
+12
+0>
+1@
+1R
+1V
+0X
+0\
+0^
+1`
+b10100001110000000010001101000101 !
+1d
+0'
+1)
+0+
+11
+0=
+1?
+1Q
+1U
+0W
+0[
+0]
+1_
+1c
+1"
+b10100001110000000010001101000101 #
+#40
+0"
+#45
+0d
+0`
+0V
+0T
+0R
+0@
+08
+06
+02
+0*
+b0 !
+0&
+0$
+#50
+1"
+#60
+0"
+#65

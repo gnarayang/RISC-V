@@ -1,0 +1,29 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Printing hello world 100 times
+
+
+`include "hello_world.vl"
+module hello_world_tb;
+	reg clk;
+	hello_world DUT(.clock(clk));
+
+	initial
+		begin
+			/*$display("timestamp\t");	
+			$monitor("%g\t",$time);*/
+
+			clk = 0;
+			
+			#1000 $finish;
+		end
+
+	always
+		begin
+			#5	clk = ~clk;
+		end
+
+
+
+
+
+endmodule

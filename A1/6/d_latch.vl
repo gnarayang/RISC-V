@@ -1,0 +1,21 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a d-latch for the d flip flop
+
+
+module d_latch(d, enable, q, qbar);
+
+input d,enable;
+output q,qbar;
+
+reg q,qbar;
+
+always @(enable or d)
+	begin
+		if(enable) begin
+		q = d;
+		qbar = !d;
+		end
+	end
+
+
+endmodule

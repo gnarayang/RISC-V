@@ -1,0 +1,65 @@
+$date
+	Thu Oct 25 19:36:40 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_cu_tb $end
+$var wire 4 ! control_i [3:0] $end
+$var reg 2 " alu_op [1:0] $end
+$var reg 2 # f3 [1:0] $end
+$var reg 2 $ f7 [1:0] $end
+$scope module DUT $end
+$var wire 2 % alu_op [1:0] $end
+$var wire 2 & f3 [1:0] $end
+$var wire 2 ' f7 [1:0] $end
+$var reg 4 ( control_i [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 (
+bx '
+bx &
+b0 %
+bx $
+bx #
+b0 "
+b10 !
+$end
+#10
+b110 !
+b110 (
+b1 "
+b1 %
+#20
+b10 !
+b10 (
+b0 #
+b0 &
+b0 $
+b0 '
+b10 "
+b10 %
+#30
+b110 !
+b110 (
+b1 $
+b1 '
+#40
+b0 !
+b0 (
+b11 #
+b11 &
+b0 $
+b0 '
+#50
+b1 !
+b1 (
+b10 #
+b10 &
+#60

@@ -1,0 +1,16 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//D-flip flop using the behavioral form
+
+module d_ff(d, clock, q, qbar);
+	
+input d,clock;
+output q,qbar;
+
+reg q,qbar;
+
+always @(posedge clock) begin
+	q <= d;
+	qbar <= !d;
+end
+
+endmodule

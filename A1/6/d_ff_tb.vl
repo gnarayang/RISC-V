@@ -1,0 +1,59 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building an d flip flop in three different ways - using d-latch in master slave configuration, minimized gate form, behavioral method
+
+`include "ms.vl"
+`include "2.vl"
+`include "3.vl"
+module d_ff_tb();
+//input c;
+
+	reg d, clk;
+	wire q, qbar;
+
+		ms msUT(.d(d), .clock(clk), .q(q), .qbar(qbar));
+
+		gate_model gate_modelUT(.d(d), .clock(clk), .q(q), .qbar(qbar));
+
+		d_ff behavioralUT(.d(d), .clock(clk), .q(q), .qbar(qbar));
+
+
+	initial begin
+		clk = 0;
+		d=1;
+
+		#25
+		d=0;
+
+		#20
+		d=1;
+
+		#10
+		d=0;
+
+		#10
+		d=1;
+
+
+		#10 $finish;
+
+	end
+
+
+	always begin
+		#10 clk = !clk;
+	end
+	
+	initial
+	begin
+		$dumpfile("wave.vcd");
+		$dumpvars();
+	end
+
+	initial 
+	begin
+		$display("\tClock\tD\tQ\tQ_bar");
+		$monitor("\t%b\t%b\t%b\t %b",clk,d,q,qbar);
+	end
+
+
+endmodule

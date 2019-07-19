@@ -1,0 +1,94 @@
+$date
+	Sun Jan 20 23:31:35 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mcu_tb $end
+$var wire 1 ! regwrite $end
+$var wire 1 " memwrite $end
+$var wire 1 # memtoreg $end
+$var wire 1 $ memread $end
+$var wire 1 % branch $end
+$var wire 1 & alusrc $end
+$var wire 1 ' aluop2 $end
+$var wire 1 ( aluop1 $end
+$var reg 32 ) instruction [31:0] $end
+$scope module DUT $end
+$var wire 1 & alusrc $end
+$var wire 32 * instruction [31:0] $end
+$var wire 1 $ memread $end
+$var wire 1 # memtoreg $end
+$var wire 1 " memwrite $end
+$var wire 1 ! regwrite $end
+$var wire 1 % branch $end
+$var wire 1 ' aluop2 $end
+$var wire 1 ( aluop1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001011000100000011 *
+b1001011000100000011 )
+0(
+0'
+1&
+0%
+1$
+1#
+0"
+1!
+$end
+#10
+b10001001011000010000011 )
+b10001001011000010000011 *
+#20
+0&
+0!
+0$
+0"
+1%
+1'
+b1000001000011001100011 )
+b1000001000011001100011 *
+#30
+0#
+1!
+0%
+1(
+0'
+b1000000000100010000000110110011 )
+b1000000000100010000000110110011 *
+#40
+1&
+1"
+1#
+0!
+0(
+b100100011000010000100011 )
+b100100011000010000100011 *
+#50
+0"
+0#
+1!
+1(
+b11111110011100010000000110010011 )
+b11111110011100010000000110010011 *
+#60
+0!
+1"
+1#
+0(
+b100100011000010000100011 )
+b100100011000010000100011 *
+#70
+1!
+1$
+0"
+b11011001100000011 )
+b11011001100000011 *
+#80

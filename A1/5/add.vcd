@@ -1,0 +1,451 @@
+$date
+	Mon Oct 15 21:27:20 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nbitadd_tb $end
+$var wire 8 ! sum [7:0] $end
+$var wire 1 " cout $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % cin $end
+$scope module add $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 1 % cin $end
+$var wire 8 ( sum [7:0] $end
+$var wire 1 " cout $end
+$var wire 7 ) c [7:1] $end
+$scope module fa[1] $end
+$var wire 1 * carry_in $end
+$var wire 1 + carry_out $end
+$var wire 1 , x $end
+$var wire 1 - y $end
+$var wire 1 . sum $end
+$var wire 1 / intermediate_sum $end
+$var wire 1 0 intermediate_carry $end
+$var wire 1 1 final_carry $end
+$scope module inst_1 $end
+$var wire 1 , x $end
+$var wire 1 - y $end
+$var reg 1 0 carry $end
+$var reg 1 / sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 / x $end
+$var wire 1 * y $end
+$var reg 1 1 carry $end
+$var reg 1 . sum $end
+$upscope $end
+$upscope $end
+$scope module fa[2] $end
+$var wire 1 2 carry_in $end
+$var wire 1 3 carry_out $end
+$var wire 1 4 x $end
+$var wire 1 5 y $end
+$var wire 1 6 sum $end
+$var wire 1 7 intermediate_sum $end
+$var wire 1 8 intermediate_carry $end
+$var wire 1 9 final_carry $end
+$scope module inst_1 $end
+$var wire 1 4 x $end
+$var wire 1 5 y $end
+$var reg 1 8 carry $end
+$var reg 1 7 sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 7 x $end
+$var wire 1 2 y $end
+$var reg 1 9 carry $end
+$var reg 1 6 sum $end
+$upscope $end
+$upscope $end
+$scope module fa[3] $end
+$var wire 1 : carry_in $end
+$var wire 1 ; carry_out $end
+$var wire 1 < x $end
+$var wire 1 = y $end
+$var wire 1 > sum $end
+$var wire 1 ? intermediate_sum $end
+$var wire 1 @ intermediate_carry $end
+$var wire 1 A final_carry $end
+$scope module inst_1 $end
+$var wire 1 < x $end
+$var wire 1 = y $end
+$var reg 1 @ carry $end
+$var reg 1 ? sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 ? x $end
+$var wire 1 : y $end
+$var reg 1 A carry $end
+$var reg 1 > sum $end
+$upscope $end
+$upscope $end
+$scope module fa[4] $end
+$var wire 1 B carry_in $end
+$var wire 1 C carry_out $end
+$var wire 1 D x $end
+$var wire 1 E y $end
+$var wire 1 F sum $end
+$var wire 1 G intermediate_sum $end
+$var wire 1 H intermediate_carry $end
+$var wire 1 I final_carry $end
+$scope module inst_1 $end
+$var wire 1 D x $end
+$var wire 1 E y $end
+$var reg 1 H carry $end
+$var reg 1 G sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 G x $end
+$var wire 1 B y $end
+$var reg 1 I carry $end
+$var reg 1 F sum $end
+$upscope $end
+$upscope $end
+$scope module fa[5] $end
+$var wire 1 J carry_in $end
+$var wire 1 K carry_out $end
+$var wire 1 L x $end
+$var wire 1 M y $end
+$var wire 1 N sum $end
+$var wire 1 O intermediate_sum $end
+$var wire 1 P intermediate_carry $end
+$var wire 1 Q final_carry $end
+$scope module inst_1 $end
+$var wire 1 L x $end
+$var wire 1 M y $end
+$var reg 1 P carry $end
+$var reg 1 O sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 O x $end
+$var wire 1 J y $end
+$var reg 1 Q carry $end
+$var reg 1 N sum $end
+$upscope $end
+$upscope $end
+$scope module fa[6] $end
+$var wire 1 R carry_in $end
+$var wire 1 S carry_out $end
+$var wire 1 T x $end
+$var wire 1 U y $end
+$var wire 1 V sum $end
+$var wire 1 W intermediate_sum $end
+$var wire 1 X intermediate_carry $end
+$var wire 1 Y final_carry $end
+$scope module inst_1 $end
+$var wire 1 T x $end
+$var wire 1 U y $end
+$var reg 1 X carry $end
+$var reg 1 W sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 W x $end
+$var wire 1 R y $end
+$var reg 1 Y carry $end
+$var reg 1 V sum $end
+$upscope $end
+$upscope $end
+$scope module fa0 $end
+$var wire 1 % carry_in $end
+$var wire 1 Z carry_out $end
+$var wire 1 [ x $end
+$var wire 1 \ y $end
+$var wire 1 ] sum $end
+$var wire 1 ^ intermediate_sum $end
+$var wire 1 _ intermediate_carry $end
+$var wire 1 ` final_carry $end
+$scope module inst_1 $end
+$var wire 1 [ x $end
+$var wire 1 \ y $end
+$var reg 1 _ carry $end
+$var reg 1 ^ sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 ^ x $end
+$var wire 1 % y $end
+$var reg 1 ` carry $end
+$var reg 1 ] sum $end
+$upscope $end
+$upscope $end
+$scope module fa15 $end
+$var wire 1 a carry_in $end
+$var wire 1 " carry_out $end
+$var wire 1 b x $end
+$var wire 1 c y $end
+$var wire 1 d sum $end
+$var wire 1 e intermediate_sum $end
+$var wire 1 f intermediate_carry $end
+$var wire 1 g final_carry $end
+$scope module inst_1 $end
+$var wire 1 b x $end
+$var wire 1 c y $end
+$var reg 1 f carry $end
+$var reg 1 e sum $end
+$upscope $end
+$scope module inst_2 $end
+$var wire 1 e x $end
+$var wire 1 a y $end
+$var reg 1 g carry $end
+$var reg 1 d sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+1N
+0M
+0L
+0K
+1J
+1I
+0H
+1G
+0F
+1E
+0D
+1C
+1B
+1A
+0@
+1?
+0>
+0=
+1<
+1;
+1:
+09
+18
+07
+06
+15
+14
+13
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b11100 )
+b100000 (
+b10100 '
+b1100 &
+0%
+b10100 $
+b1100 #
+0"
+b100000 !
+$end
+#20
+0B
+0;
+0A
+1>
+1V
+0:
+1R
+1K
+b110000 )
+03
+16
+1Q
+0N
+1.
+0I
+0F
+08
+17
+1O
+b1001111 !
+b1001111 (
+1]
+1/
+1H
+0G
+05
+1=
+1M
+1^
+1,
+0<
+1D
+1[
+b111000 $
+b111000 '
+b10111 #
+b10111 &
+#40
+1F
+1B
+1;
+1A
+0>
+1:
+13
+19
+06
+1"
+12
+1g
+1a
+1+
+1S
+11
+0.
+1Y
+0V
+1*
+0d
+1W
+1_
+0^
+1e
+1-
+1U
+0,
+b1111111 )
+1Z
+1\
+1c
+0`
+b10001 !
+b10001 (
+1]
+b11111011 $
+b11111011 '
+b10101 #
+b10101 &
+1%
+#60
+0R
+0K
+0Q
+1N
+0J
+0C
+0B
+0;
+0*
+0A
+1>
+01
+0.
+0I
+1F
+0Y
+0V
+0?
+b1000110 )
+0Z
+10
+0/
+0H
+1G
+1X
+0W
+0g
+b10111001 !
+b10111001 (
+1d
+0=
+0M
+0_
+1,
+0D
+1L
+1T
+1f
+0e
+0\
+0[
+1b
+b11010010 $
+b11010010 '
+b11100110 #
+b11100110 &
+#80
+1V
+1R
+1K
+12
+0:
+0B
+11
+1Q
+0N
+1*
+1J
+03
+0;
+1+
+0.
+09
+16
+0A
+1>
+1C
+0F
+00
+1/
+b1110011 )
+1Z
+07
+1?
+1H
+0G
+1g
+b1001101 !
+b1001101 (
+0d
+0-
+1_
+04
+1<
+1D
+0f
+1e
+1\
+1[
+0b
+b11010001 $
+b11010001 '
+b1111011 #
+b1111011 &
+#120

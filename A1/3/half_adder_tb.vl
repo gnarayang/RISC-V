@@ -1,0 +1,41 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a half adder
+
+
+`include "half_adder.vl"
+module half_adder_tb();
+	reg x;
+	reg y;
+	wire sum;
+	wire carry;
+
+	half_adder DUT(.x(x), .y(y), .sum(sum), .carry(carry));
+
+	initial
+		begin
+			$dumpfile("gtkwave.vcd");
+			$dumpvars(0,half_adder_tb);
+			x=0; y=0;
+
+			#10
+			x=0; y=1;
+
+			#10
+			x=1; y=0;
+
+			#10
+			x=1; y=1;
+
+			#10
+			$finish;
+		end
+
+	initial
+		begin
+			$display("\tx\ty\tS\tC");
+			$monitor("\t%b\t%b\t%b\t%b",x,y,sum,carry);
+		end
+
+
+	
+endmodule

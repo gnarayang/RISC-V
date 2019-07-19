@@ -1,0 +1,16 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//D-flip flop using D-latch in master-slave form
+
+`include "d_latch.vl"
+module ms(d, clock, q, qbar);
+
+input d,clock;
+output q, qbar;
+
+wire q_intermediate, qbar_intermediate;
+
+d_latch masterui(.d(d), .enable(!clock), .q(q_intermediate), .qbar(qbar_intermediate));
+
+d_latch slaveui(.d(q_intermediate), .enable(clock), .q(q), .qbar(qbar));
+	
+endmodule

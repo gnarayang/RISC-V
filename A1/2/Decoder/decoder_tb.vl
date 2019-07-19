@@ -1,0 +1,61 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a 4x16 decoder
+
+
+`include "decoder.vl"
+module decoder_tb;
+	reg [3:0] decoder_input;
+	reg enable;
+	wire [15:0] decoder_output;
+
+	decoder DUT(.decoder_input(decoder_input), .enable(enable), .decoder_output(decoder_output));
+
+	initial
+		begin
+				$dumpfile("test.vcd");
+    			$dumpvars(0,decoder_tb);
+				enable = 0;
+				decoder_input = 0;
+			#10 decoder_input = 1;
+			#10 decoder_input = 2;
+			#10 decoder_input = 3;
+			#10 decoder_input = 4;
+			#10 decoder_input = 5;
+			#10 decoder_input = 6;
+			#10 decoder_input = 7;
+			#10 decoder_input = 8;
+			#10 decoder_input = 9;
+			#10 decoder_input = 10;
+			#10 decoder_input = 11;
+			#10 decoder_input = 12;
+			#10 decoder_input = 13;
+			#10 decoder_input = 14;
+			#10 decoder_input = 15;
+
+			#10 enable = 1;
+				decoder_input = 0;
+			#10 decoder_input = 1;
+			#10 decoder_input = 2;
+			#10 decoder_input = 3;
+			#10 decoder_input = 4;
+			#10 decoder_input = 5;
+			#10 decoder_input = 6;
+			#10 decoder_input = 7;
+			#10 decoder_input = 8;
+			#10 decoder_input = 9;
+			#10 decoder_input = 10;
+			#10 decoder_input = 11;
+			#10 decoder_input = 12;
+			#10 decoder_input = 13;
+			#10 decoder_input = 14;
+			#10 decoder_input = 15;
+			#10 $finish;
+
+		end
+
+		initial
+			begin
+				$display("Enable\t\tInput\t\t    Output");
+				$monitor("  %b\t\t%b\t\t%b",enable,decoder_input,decoder_output);
+			end
+endmodule

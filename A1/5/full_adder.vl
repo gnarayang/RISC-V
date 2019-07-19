@@ -1,0 +1,20 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a full adder using two half adders
+
+
+`include "half_adder.vl"
+
+module full_adder(x,y,carry_in,sum,carry_out);
+
+input x,y,carry_in;
+output sum,carry_out;
+
+wire intermediate_sum,intermediate_carry,final_carry;
+
+half_adder inst_1(.x(x), .y(y), .sum(intermediate_sum), .carry(intermediate_carry));
+
+half_adder inst_2(.x(intermediate_sum), .y(carry_in), .sum(sum), .carry(final_carry));
+
+assign carry_out = intermediate_carry | final_carry ;
+
+endmodule

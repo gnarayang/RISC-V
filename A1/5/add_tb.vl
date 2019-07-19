@@ -1,0 +1,38 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building an n-bit adder using n full adders
+
+
+module nbitadd_tb;
+  parameter n = 8;
+  wire [n-1:0] sum;
+  wire cout;
+  reg [n-1:0] a, b;
+  reg cin;
+  
+  nbitadd add(sum[n-1:0], cout, cin,  a[n-1:0], b[n-1:0]);
+  initial
+  begin
+    $dumpfile("add.vcd");
+    $dumpvars(0,nbitadd_tb);
+    $display("    A   |    B   |Cin||Sum/Diff|Cout");
+    cin=0; a =12; b = 20;
+    #20;
+    $display("%b|%b| %b ||%b|%b",a,b,cin,sum,cout);
+    a=23;b=56;
+    #20;
+    $display("%b|%b| %b ||%b|%b",a,b,cin,sum,cout);
+    cin=1;
+    a=21;b=4;b=~b;
+    #20;
+    $display("%b|%b| %b ||%b|%b",a,~b,cin,sum,cout);
+    a=230;b=45;b=~b;
+    #20;
+    $display("%b|%b| %b ||%b|%b",a,~b,cin,sum,cout);
+    a=123;b=46;b=~b;
+    #20;
+    $display("%b|%b| %b ||%b|%b",a,~b,cin,sum,cout);
+    #20;
+  end
+
+endmodule
+

@@ -1,0 +1,171 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55f61575fff0 .scope module, "d_ff_tb" "d_ff_tb" 2 4;
+ .timescale 0 0;
+v0x55f615781d20_0 .var "clk", 0 0;
+v0x55f615781de0_0 .var "d", 0 0;
+RS_0x7f2f0904c078 .resolv tri, v0x55f61577fe00_0, v0x55f615781640_0, L_0x55f615782420;
+v0x55f615781ea0_0 .net8 "q", 0 0, RS_0x7f2f0904c078;  3 drivers
+RS_0x7f2f0904c0a8 .resolv tri, v0x55f61577fea0_0, v0x55f615781730_0, L_0x55f615782520;
+v0x55f615781fd0_0 .net8 "qbar", 0 0, RS_0x7f2f0904c0a8;  3 drivers
+S_0x55f615760170 .scope module, "behavioralUT" "d_ff" 2 14, 3 1 0, S_0x55f61575fff0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d"
+    .port_info 1 /INPUT 1 "clock"
+    .port_info 2 /OUTPUT 1 "q"
+    .port_info 3 /OUTPUT 1 "qbar"
+v0x55f615760360_0 .net "clock", 0 0, v0x55f615781d20_0;  1 drivers
+v0x55f61577fd40_0 .net "d", 0 0, v0x55f615781de0_0;  1 drivers
+v0x55f61577fe00_0 .var "q", 0 0;
+v0x55f61577fea0_0 .var "qbar", 0 0;
+E_0x55f615753b00 .event posedge, v0x55f615760360_0;
+S_0x55f61577ffe0 .scope module, "gate_modelUT" "gate_model" 2 12, 4 1 0, S_0x55f61575fff0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d"
+    .port_info 1 /INPUT 1 "clock"
+    .port_info 2 /OUTPUT 1 "q"
+    .port_info 3 /OUTPUT 1 "qbar"
+L_0x55f6157821a0 .functor NAND 1, v0x55f615781de0_0, L_0x55f615782270, C4<1>, C4<1>;
+L_0x55f615782270 .functor NAND 1, L_0x55f6157821a0, L_0x55f615782310, v0x55f615781d20_0, C4<1>;
+L_0x55f615782310 .functor NAND 1, v0x55f615781d20_0, L_0x55f615782380, C4<1>, C4<1>;
+L_0x55f615782380 .functor NAND 1, L_0x55f615782310, L_0x55f6157821a0, C4<1>, C4<1>;
+L_0x55f615782420 .functor NAND 1, L_0x55f615782310, RS_0x7f2f0904c0a8, C4<1>, C4<1>;
+L_0x55f615782520 .functor NAND 1, L_0x55f615782270, RS_0x7f2f0904c078, C4<1>, C4<1>;
+v0x55f615780240_0 .net "clock", 0 0, v0x55f615781d20_0;  alias, 1 drivers
+v0x55f615780310_0 .net "d", 0 0, v0x55f615781de0_0;  alias, 1 drivers
+v0x55f6157803e0_0 .net "lower", 0 0, L_0x55f6157821a0;  1 drivers
+v0x55f6157804b0_0 .net8 "q", 0 0, RS_0x7f2f0904c078;  alias, 3 drivers
+v0x55f615780580_0 .net8 "qbar", 0 0, RS_0x7f2f0904c0a8;  alias, 3 drivers
+v0x55f615780670_0 .net "r", 0 0, L_0x55f615782270;  1 drivers
+v0x55f615780710_0 .net "s", 0 0, L_0x55f615782310;  1 drivers
+v0x55f6157807b0_0 .net "upper", 0 0, L_0x55f615782380;  1 drivers
+S_0x55f6157808e0 .scope module, "msUT" "ms" 2 10, 5 2 0, S_0x55f61575fff0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d"
+    .port_info 1 /INPUT 1 "clock"
+    .port_info 2 /OUTPUT 1 "q"
+    .port_info 3 /OUTPUT 1 "qbar"
+v0x55f615781860_0 .net "clock", 0 0, v0x55f615781d20_0;  alias, 1 drivers
+v0x55f615781920_0 .net "d", 0 0, v0x55f615781de0_0;  alias, 1 drivers
+v0x55f6157819e0_0 .net8 "q", 0 0, RS_0x7f2f0904c078;  alias, 3 drivers
+v0x55f615781a80_0 .net "q_intermediate", 0 0, v0x55f615780fd0_0;  1 drivers
+v0x55f615781b70_0 .net8 "qbar", 0 0, RS_0x7f2f0904c0a8;  alias, 3 drivers
+v0x55f615781c60_0 .net "qbar_intermediate", 0 0, v0x55f615781070_0;  1 drivers
+L_0x55f615782100 .reduce/nor v0x55f615781d20_0;
+S_0x55f615780b50 .scope module, "masterui" "d_latch" 5 9, 6 1 0, S_0x55f6157808e0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d"
+    .port_info 1 /INPUT 1 "enable"
+    .port_info 2 /OUTPUT 1 "q"
+    .port_info 3 /OUTPUT 1 "qbar"
+v0x55f615780e00_0 .net "d", 0 0, v0x55f615781de0_0;  alias, 1 drivers
+v0x55f615780f10_0 .net "enable", 0 0, L_0x55f615782100;  1 drivers
+v0x55f615780fd0_0 .var "q", 0 0;
+v0x55f615781070_0 .var "qbar", 0 0;
+E_0x55f6157539f0 .event edge, v0x55f61577fd40_0, v0x55f615780f10_0;
+S_0x55f6157811e0 .scope module, "slaveui" "d_latch" 5 11, 6 1 0, S_0x55f6157808e0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d"
+    .port_info 1 /INPUT 1 "enable"
+    .port_info 2 /OUTPUT 1 "q"
+    .port_info 3 /OUTPUT 1 "qbar"
+v0x55f615781460_0 .net "d", 0 0, v0x55f615780fd0_0;  alias, 1 drivers
+v0x55f615781550_0 .net "enable", 0 0, v0x55f615781d20_0;  alias, 1 drivers
+v0x55f615781640_0 .var "q", 0 0;
+v0x55f615781730_0 .var "qbar", 0 0;
+E_0x55f615753c10 .event edge, v0x55f615780fd0_0, v0x55f615760360_0;
+    .scope S_0x55f615780b50;
+T_0 ;
+    %wait E_0x55f6157539f0;
+    %load/vec4 v0x55f615780f10_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %load/vec4 v0x55f615780e00_0;
+    %store/vec4 v0x55f615780fd0_0, 0, 1;
+    %load/vec4 v0x55f615780e00_0;
+    %nor/r;
+    %store/vec4 v0x55f615781070_0, 0, 1;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x55f6157811e0;
+T_1 ;
+    %wait E_0x55f615753c10;
+    %load/vec4 v0x55f615781550_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %load/vec4 v0x55f615781460_0;
+    %store/vec4 v0x55f615781640_0, 0, 1;
+    %load/vec4 v0x55f615781460_0;
+    %nor/r;
+    %store/vec4 v0x55f615781730_0, 0, 1;
+T_1.0 ;
+    %jmp T_1;
+    .thread T_1, $push;
+    .scope S_0x55f615760170;
+T_2 ;
+    %wait E_0x55f615753b00;
+    %load/vec4 v0x55f61577fd40_0;
+    %assign/vec4 v0x55f61577fe00_0, 0;
+    %load/vec4 v0x55f61577fd40_0;
+    %nor/r;
+    %assign/vec4 v0x55f61577fea0_0, 0;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x55f61575fff0;
+T_3 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f615781d20_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f615781de0_0, 0, 1;
+    %delay 25, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f615781de0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f615781de0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f615781de0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f615781de0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 34 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_0x55f61575fff0;
+T_4 ;
+    %delay 10, 0;
+    %load/vec4 v0x55f615781d20_0;
+    %nor/r;
+    %store/vec4 v0x55f615781d20_0, 0, 1;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_0x55f61575fff0;
+T_5 ;
+    %vpi_call 2 45 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call 2 46 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_5;
+    .scope S_0x55f61575fff0;
+T_6 ;
+    %vpi_call 2 51 "$display", "\011Clock\011D\011Q\011Q_bar" {0 0 0};
+    %vpi_call 2 52 "$monitor", "\011%b\011%b\011%b\011 %b", v0x55f615781d20_0, v0x55f615781de0_0, v0x55f615781ea0_0, v0x55f615781fd0_0 {0 0 0};
+    %end;
+    .thread T_6;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "d_ff_tb.vl";
+    "./3.vl";
+    "./2.vl";
+    "./ms.vl";
+    "./d_latch.vl";

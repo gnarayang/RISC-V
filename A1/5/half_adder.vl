@@ -1,0 +1,24 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a half adder
+
+
+module half_adder(x, y, sum, carry);
+
+input x;
+input y;
+output sum;
+output carry;
+
+reg sum;
+reg carry;
+
+always @(x or y) begin
+	
+	sum = x ^ y;
+	carry = x & y;
+
+	end
+
+
+
+endmodule

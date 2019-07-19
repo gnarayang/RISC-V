@@ -1,0 +1,36 @@
+module encoder(encoder_input, enable, encoder_output);
+
+input [15:0] encoder_input ;
+input enable ;
+output [3:0] encoder_output; 
+
+reg encoder_output;
+always @(enable or encoder_input)
+	begin
+		encoder_output = 0;
+		if(enable) begin
+			case(encoder_input)
+				16'h0001 : encoder_output = 4'h0 ;
+				16'h0002 : encoder_output = 4'h1;
+				16'h0004 : encoder_output = 4'h2 ;
+				16'h0008 : encoder_output = 4'h3 ;
+				16'h0010 : encoder_output = 4'h4 ;
+				16'h0020 : encoder_output = 4'h5 ;
+				16'h0040 : encoder_output = 4'h6 ;
+				16'h0080 : encoder_output = 4'h7 ;
+				16'h0100 : encoder_output = 4'h8 ;
+				16'h0200 : encoder_output = 4'h9 ;
+				16'h0400 : encoder_output = 4'hA ;
+				16'h0800 : encoder_output = 4'hB ;
+				16'h1000 : encoder_output = 4'hC ;
+				16'h2000 : encoder_output = 4'hD ;
+				16'h4000 : encoder_output = 4'hE ;
+				16'h8000 : encoder_output = 4'hF ;
+			endcase
+		end
+	end 
+	
+
+
+
+endmodule

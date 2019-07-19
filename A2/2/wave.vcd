@@ -1,0 +1,2239 @@
+$date
+	Thu Oct 25 22:27:33 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module sixty_four_bit_alu_tb $end
+$var wire 1 ! zf $end
+$var wire 64 " result [63:0] $end
+$var wire 1 # carry_out $end
+$var reg 64 $ a [63:0] $end
+$var reg 1 % a_invert $end
+$var reg 64 & b [63:0] $end
+$var reg 1 ' b_invert $end
+$var reg 1 ( carry_in $end
+$var reg 2 ) operation [1:0] $end
+$scope module DUT $end
+$var wire 64 * a [63:0] $end
+$var wire 1 % a_invert $end
+$var wire 64 + b [63:0] $end
+$var wire 1 ' b_invert $end
+$var wire 1 ( carry_in $end
+$var wire 2 , operation [1:0] $end
+$var wire 64 - zf_i [63:0] $end
+$var wire 1 ! zf $end
+$var wire 64 . result [63:0] $end
+$var wire 64 / carry_out_i [63:0] $end
+$var wire 1 # carry_out $end
+$scope module DUT[1] $end
+$var wire 1 0 a $end
+$var wire 1 % a_invert $end
+$var wire 1 1 b $end
+$var wire 1 ' b_invert $end
+$var wire 1 2 carry_in $end
+$var wire 2 3 operation [1:0] $end
+$var reg 1 4 a_out $end
+$var reg 1 5 and_ $end
+$var reg 1 6 b_out $end
+$var reg 1 7 carry_out $end
+$var reg 1 8 or_ $end
+$var reg 1 9 result $end
+$var reg 1 : sum $end
+$var reg 1 ; zf $end
+$upscope $end
+$scope module DUT[2] $end
+$var wire 1 < a $end
+$var wire 1 % a_invert $end
+$var wire 1 = b $end
+$var wire 1 ' b_invert $end
+$var wire 1 > carry_in $end
+$var wire 2 ? operation [1:0] $end
+$var reg 1 @ a_out $end
+$var reg 1 A and_ $end
+$var reg 1 B b_out $end
+$var reg 1 C carry_out $end
+$var reg 1 D or_ $end
+$var reg 1 E result $end
+$var reg 1 F sum $end
+$var reg 1 G zf $end
+$upscope $end
+$scope module DUT[3] $end
+$var wire 1 H a $end
+$var wire 1 % a_invert $end
+$var wire 1 I b $end
+$var wire 1 ' b_invert $end
+$var wire 1 J carry_in $end
+$var wire 2 K operation [1:0] $end
+$var reg 1 L a_out $end
+$var reg 1 M and_ $end
+$var reg 1 N b_out $end
+$var reg 1 O carry_out $end
+$var reg 1 P or_ $end
+$var reg 1 Q result $end
+$var reg 1 R sum $end
+$var reg 1 S zf $end
+$upscope $end
+$scope module DUT[4] $end
+$var wire 1 T a $end
+$var wire 1 % a_invert $end
+$var wire 1 U b $end
+$var wire 1 ' b_invert $end
+$var wire 1 V carry_in $end
+$var wire 2 W operation [1:0] $end
+$var reg 1 X a_out $end
+$var reg 1 Y and_ $end
+$var reg 1 Z b_out $end
+$var reg 1 [ carry_out $end
+$var reg 1 \ or_ $end
+$var reg 1 ] result $end
+$var reg 1 ^ sum $end
+$var reg 1 _ zf $end
+$upscope $end
+$scope module DUT[5] $end
+$var wire 1 ` a $end
+$var wire 1 % a_invert $end
+$var wire 1 a b $end
+$var wire 1 ' b_invert $end
+$var wire 1 b carry_in $end
+$var wire 2 c operation [1:0] $end
+$var reg 1 d a_out $end
+$var reg 1 e and_ $end
+$var reg 1 f b_out $end
+$var reg 1 g carry_out $end
+$var reg 1 h or_ $end
+$var reg 1 i result $end
+$var reg 1 j sum $end
+$var reg 1 k zf $end
+$upscope $end
+$scope module DUT[6] $end
+$var wire 1 l a $end
+$var wire 1 % a_invert $end
+$var wire 1 m b $end
+$var wire 1 ' b_invert $end
+$var wire 1 n carry_in $end
+$var wire 2 o operation [1:0] $end
+$var reg 1 p a_out $end
+$var reg 1 q and_ $end
+$var reg 1 r b_out $end
+$var reg 1 s carry_out $end
+$var reg 1 t or_ $end
+$var reg 1 u result $end
+$var reg 1 v sum $end
+$var reg 1 w zf $end
+$upscope $end
+$scope module DUT[7] $end
+$var wire 1 x a $end
+$var wire 1 % a_invert $end
+$var wire 1 y b $end
+$var wire 1 ' b_invert $end
+$var wire 1 z carry_in $end
+$var wire 2 { operation [1:0] $end
+$var reg 1 | a_out $end
+$var reg 1 } and_ $end
+$var reg 1 ~ b_out $end
+$var reg 1 !" carry_out $end
+$var reg 1 "" or_ $end
+$var reg 1 #" result $end
+$var reg 1 $" sum $end
+$var reg 1 %" zf $end
+$upscope $end
+$scope module DUT[8] $end
+$var wire 1 &" a $end
+$var wire 1 % a_invert $end
+$var wire 1 '" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 (" carry_in $end
+$var wire 2 )" operation [1:0] $end
+$var reg 1 *" a_out $end
+$var reg 1 +" and_ $end
+$var reg 1 ," b_out $end
+$var reg 1 -" carry_out $end
+$var reg 1 ." or_ $end
+$var reg 1 /" result $end
+$var reg 1 0" sum $end
+$var reg 1 1" zf $end
+$upscope $end
+$scope module DUT[9] $end
+$var wire 1 2" a $end
+$var wire 1 % a_invert $end
+$var wire 1 3" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 4" carry_in $end
+$var wire 2 5" operation [1:0] $end
+$var reg 1 6" a_out $end
+$var reg 1 7" and_ $end
+$var reg 1 8" b_out $end
+$var reg 1 9" carry_out $end
+$var reg 1 :" or_ $end
+$var reg 1 ;" result $end
+$var reg 1 <" sum $end
+$var reg 1 =" zf $end
+$upscope $end
+$scope module DUT[10] $end
+$var wire 1 >" a $end
+$var wire 1 % a_invert $end
+$var wire 1 ?" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 @" carry_in $end
+$var wire 2 A" operation [1:0] $end
+$var reg 1 B" a_out $end
+$var reg 1 C" and_ $end
+$var reg 1 D" b_out $end
+$var reg 1 E" carry_out $end
+$var reg 1 F" or_ $end
+$var reg 1 G" result $end
+$var reg 1 H" sum $end
+$var reg 1 I" zf $end
+$upscope $end
+$scope module DUT[11] $end
+$var wire 1 J" a $end
+$var wire 1 % a_invert $end
+$var wire 1 K" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 L" carry_in $end
+$var wire 2 M" operation [1:0] $end
+$var reg 1 N" a_out $end
+$var reg 1 O" and_ $end
+$var reg 1 P" b_out $end
+$var reg 1 Q" carry_out $end
+$var reg 1 R" or_ $end
+$var reg 1 S" result $end
+$var reg 1 T" sum $end
+$var reg 1 U" zf $end
+$upscope $end
+$scope module DUT[12] $end
+$var wire 1 V" a $end
+$var wire 1 % a_invert $end
+$var wire 1 W" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 X" carry_in $end
+$var wire 2 Y" operation [1:0] $end
+$var reg 1 Z" a_out $end
+$var reg 1 [" and_ $end
+$var reg 1 \" b_out $end
+$var reg 1 ]" carry_out $end
+$var reg 1 ^" or_ $end
+$var reg 1 _" result $end
+$var reg 1 `" sum $end
+$var reg 1 a" zf $end
+$upscope $end
+$scope module DUT[13] $end
+$var wire 1 b" a $end
+$var wire 1 % a_invert $end
+$var wire 1 c" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 d" carry_in $end
+$var wire 2 e" operation [1:0] $end
+$var reg 1 f" a_out $end
+$var reg 1 g" and_ $end
+$var reg 1 h" b_out $end
+$var reg 1 i" carry_out $end
+$var reg 1 j" or_ $end
+$var reg 1 k" result $end
+$var reg 1 l" sum $end
+$var reg 1 m" zf $end
+$upscope $end
+$scope module DUT[14] $end
+$var wire 1 n" a $end
+$var wire 1 % a_invert $end
+$var wire 1 o" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 p" carry_in $end
+$var wire 2 q" operation [1:0] $end
+$var reg 1 r" a_out $end
+$var reg 1 s" and_ $end
+$var reg 1 t" b_out $end
+$var reg 1 u" carry_out $end
+$var reg 1 v" or_ $end
+$var reg 1 w" result $end
+$var reg 1 x" sum $end
+$var reg 1 y" zf $end
+$upscope $end
+$scope module DUT[15] $end
+$var wire 1 z" a $end
+$var wire 1 % a_invert $end
+$var wire 1 {" b $end
+$var wire 1 ' b_invert $end
+$var wire 1 |" carry_in $end
+$var wire 2 }" operation [1:0] $end
+$var reg 1 ~" a_out $end
+$var reg 1 !# and_ $end
+$var reg 1 "# b_out $end
+$var reg 1 ## carry_out $end
+$var reg 1 $# or_ $end
+$var reg 1 %# result $end
+$var reg 1 &# sum $end
+$var reg 1 '# zf $end
+$upscope $end
+$scope module DUT[16] $end
+$var wire 1 (# a $end
+$var wire 1 % a_invert $end
+$var wire 1 )# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 *# carry_in $end
+$var wire 2 +# operation [1:0] $end
+$var reg 1 ,# a_out $end
+$var reg 1 -# and_ $end
+$var reg 1 .# b_out $end
+$var reg 1 /# carry_out $end
+$var reg 1 0# or_ $end
+$var reg 1 1# result $end
+$var reg 1 2# sum $end
+$var reg 1 3# zf $end
+$upscope $end
+$scope module DUT[17] $end
+$var wire 1 4# a $end
+$var wire 1 % a_invert $end
+$var wire 1 5# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 6# carry_in $end
+$var wire 2 7# operation [1:0] $end
+$var reg 1 8# a_out $end
+$var reg 1 9# and_ $end
+$var reg 1 :# b_out $end
+$var reg 1 ;# carry_out $end
+$var reg 1 <# or_ $end
+$var reg 1 =# result $end
+$var reg 1 ># sum $end
+$var reg 1 ?# zf $end
+$upscope $end
+$scope module DUT[18] $end
+$var wire 1 @# a $end
+$var wire 1 % a_invert $end
+$var wire 1 A# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 B# carry_in $end
+$var wire 2 C# operation [1:0] $end
+$var reg 1 D# a_out $end
+$var reg 1 E# and_ $end
+$var reg 1 F# b_out $end
+$var reg 1 G# carry_out $end
+$var reg 1 H# or_ $end
+$var reg 1 I# result $end
+$var reg 1 J# sum $end
+$var reg 1 K# zf $end
+$upscope $end
+$scope module DUT[19] $end
+$var wire 1 L# a $end
+$var wire 1 % a_invert $end
+$var wire 1 M# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 N# carry_in $end
+$var wire 2 O# operation [1:0] $end
+$var reg 1 P# a_out $end
+$var reg 1 Q# and_ $end
+$var reg 1 R# b_out $end
+$var reg 1 S# carry_out $end
+$var reg 1 T# or_ $end
+$var reg 1 U# result $end
+$var reg 1 V# sum $end
+$var reg 1 W# zf $end
+$upscope $end
+$scope module DUT[20] $end
+$var wire 1 X# a $end
+$var wire 1 % a_invert $end
+$var wire 1 Y# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 Z# carry_in $end
+$var wire 2 [# operation [1:0] $end
+$var reg 1 \# a_out $end
+$var reg 1 ]# and_ $end
+$var reg 1 ^# b_out $end
+$var reg 1 _# carry_out $end
+$var reg 1 `# or_ $end
+$var reg 1 a# result $end
+$var reg 1 b# sum $end
+$var reg 1 c# zf $end
+$upscope $end
+$scope module DUT[21] $end
+$var wire 1 d# a $end
+$var wire 1 % a_invert $end
+$var wire 1 e# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 f# carry_in $end
+$var wire 2 g# operation [1:0] $end
+$var reg 1 h# a_out $end
+$var reg 1 i# and_ $end
+$var reg 1 j# b_out $end
+$var reg 1 k# carry_out $end
+$var reg 1 l# or_ $end
+$var reg 1 m# result $end
+$var reg 1 n# sum $end
+$var reg 1 o# zf $end
+$upscope $end
+$scope module DUT[22] $end
+$var wire 1 p# a $end
+$var wire 1 % a_invert $end
+$var wire 1 q# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 r# carry_in $end
+$var wire 2 s# operation [1:0] $end
+$var reg 1 t# a_out $end
+$var reg 1 u# and_ $end
+$var reg 1 v# b_out $end
+$var reg 1 w# carry_out $end
+$var reg 1 x# or_ $end
+$var reg 1 y# result $end
+$var reg 1 z# sum $end
+$var reg 1 {# zf $end
+$upscope $end
+$scope module DUT[23] $end
+$var wire 1 |# a $end
+$var wire 1 % a_invert $end
+$var wire 1 }# b $end
+$var wire 1 ' b_invert $end
+$var wire 1 ~# carry_in $end
+$var wire 2 !$ operation [1:0] $end
+$var reg 1 "$ a_out $end
+$var reg 1 #$ and_ $end
+$var reg 1 $$ b_out $end
+$var reg 1 %$ carry_out $end
+$var reg 1 &$ or_ $end
+$var reg 1 '$ result $end
+$var reg 1 ($ sum $end
+$var reg 1 )$ zf $end
+$upscope $end
+$scope module DUT[24] $end
+$var wire 1 *$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 +$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 ,$ carry_in $end
+$var wire 2 -$ operation [1:0] $end
+$var reg 1 .$ a_out $end
+$var reg 1 /$ and_ $end
+$var reg 1 0$ b_out $end
+$var reg 1 1$ carry_out $end
+$var reg 1 2$ or_ $end
+$var reg 1 3$ result $end
+$var reg 1 4$ sum $end
+$var reg 1 5$ zf $end
+$upscope $end
+$scope module DUT[25] $end
+$var wire 1 6$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 7$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 8$ carry_in $end
+$var wire 2 9$ operation [1:0] $end
+$var reg 1 :$ a_out $end
+$var reg 1 ;$ and_ $end
+$var reg 1 <$ b_out $end
+$var reg 1 =$ carry_out $end
+$var reg 1 >$ or_ $end
+$var reg 1 ?$ result $end
+$var reg 1 @$ sum $end
+$var reg 1 A$ zf $end
+$upscope $end
+$scope module DUT[26] $end
+$var wire 1 B$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 C$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 D$ carry_in $end
+$var wire 2 E$ operation [1:0] $end
+$var reg 1 F$ a_out $end
+$var reg 1 G$ and_ $end
+$var reg 1 H$ b_out $end
+$var reg 1 I$ carry_out $end
+$var reg 1 J$ or_ $end
+$var reg 1 K$ result $end
+$var reg 1 L$ sum $end
+$var reg 1 M$ zf $end
+$upscope $end
+$scope module DUT[27] $end
+$var wire 1 N$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 O$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 P$ carry_in $end
+$var wire 2 Q$ operation [1:0] $end
+$var reg 1 R$ a_out $end
+$var reg 1 S$ and_ $end
+$var reg 1 T$ b_out $end
+$var reg 1 U$ carry_out $end
+$var reg 1 V$ or_ $end
+$var reg 1 W$ result $end
+$var reg 1 X$ sum $end
+$var reg 1 Y$ zf $end
+$upscope $end
+$scope module DUT[28] $end
+$var wire 1 Z$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 [$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 \$ carry_in $end
+$var wire 2 ]$ operation [1:0] $end
+$var reg 1 ^$ a_out $end
+$var reg 1 _$ and_ $end
+$var reg 1 `$ b_out $end
+$var reg 1 a$ carry_out $end
+$var reg 1 b$ or_ $end
+$var reg 1 c$ result $end
+$var reg 1 d$ sum $end
+$var reg 1 e$ zf $end
+$upscope $end
+$scope module DUT[29] $end
+$var wire 1 f$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 g$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 h$ carry_in $end
+$var wire 2 i$ operation [1:0] $end
+$var reg 1 j$ a_out $end
+$var reg 1 k$ and_ $end
+$var reg 1 l$ b_out $end
+$var reg 1 m$ carry_out $end
+$var reg 1 n$ or_ $end
+$var reg 1 o$ result $end
+$var reg 1 p$ sum $end
+$var reg 1 q$ zf $end
+$upscope $end
+$scope module DUT[30] $end
+$var wire 1 r$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 s$ b $end
+$var wire 1 ' b_invert $end
+$var wire 1 t$ carry_in $end
+$var wire 2 u$ operation [1:0] $end
+$var reg 1 v$ a_out $end
+$var reg 1 w$ and_ $end
+$var reg 1 x$ b_out $end
+$var reg 1 y$ carry_out $end
+$var reg 1 z$ or_ $end
+$var reg 1 {$ result $end
+$var reg 1 |$ sum $end
+$var reg 1 }$ zf $end
+$upscope $end
+$scope module DUT[31] $end
+$var wire 1 ~$ a $end
+$var wire 1 % a_invert $end
+$var wire 1 !% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 "% carry_in $end
+$var wire 2 #% operation [1:0] $end
+$var reg 1 $% a_out $end
+$var reg 1 %% and_ $end
+$var reg 1 &% b_out $end
+$var reg 1 '% carry_out $end
+$var reg 1 (% or_ $end
+$var reg 1 )% result $end
+$var reg 1 *% sum $end
+$var reg 1 +% zf $end
+$upscope $end
+$scope module DUT[32] $end
+$var wire 1 ,% a $end
+$var wire 1 % a_invert $end
+$var wire 1 -% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 .% carry_in $end
+$var wire 2 /% operation [1:0] $end
+$var reg 1 0% a_out $end
+$var reg 1 1% and_ $end
+$var reg 1 2% b_out $end
+$var reg 1 3% carry_out $end
+$var reg 1 4% or_ $end
+$var reg 1 5% result $end
+$var reg 1 6% sum $end
+$var reg 1 7% zf $end
+$upscope $end
+$scope module DUT[33] $end
+$var wire 1 8% a $end
+$var wire 1 % a_invert $end
+$var wire 1 9% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 :% carry_in $end
+$var wire 2 ;% operation [1:0] $end
+$var reg 1 <% a_out $end
+$var reg 1 =% and_ $end
+$var reg 1 >% b_out $end
+$var reg 1 ?% carry_out $end
+$var reg 1 @% or_ $end
+$var reg 1 A% result $end
+$var reg 1 B% sum $end
+$var reg 1 C% zf $end
+$upscope $end
+$scope module DUT[34] $end
+$var wire 1 D% a $end
+$var wire 1 % a_invert $end
+$var wire 1 E% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 F% carry_in $end
+$var wire 2 G% operation [1:0] $end
+$var reg 1 H% a_out $end
+$var reg 1 I% and_ $end
+$var reg 1 J% b_out $end
+$var reg 1 K% carry_out $end
+$var reg 1 L% or_ $end
+$var reg 1 M% result $end
+$var reg 1 N% sum $end
+$var reg 1 O% zf $end
+$upscope $end
+$scope module DUT[35] $end
+$var wire 1 P% a $end
+$var wire 1 % a_invert $end
+$var wire 1 Q% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 R% carry_in $end
+$var wire 2 S% operation [1:0] $end
+$var reg 1 T% a_out $end
+$var reg 1 U% and_ $end
+$var reg 1 V% b_out $end
+$var reg 1 W% carry_out $end
+$var reg 1 X% or_ $end
+$var reg 1 Y% result $end
+$var reg 1 Z% sum $end
+$var reg 1 [% zf $end
+$upscope $end
+$scope module DUT[36] $end
+$var wire 1 \% a $end
+$var wire 1 % a_invert $end
+$var wire 1 ]% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 ^% carry_in $end
+$var wire 2 _% operation [1:0] $end
+$var reg 1 `% a_out $end
+$var reg 1 a% and_ $end
+$var reg 1 b% b_out $end
+$var reg 1 c% carry_out $end
+$var reg 1 d% or_ $end
+$var reg 1 e% result $end
+$var reg 1 f% sum $end
+$var reg 1 g% zf $end
+$upscope $end
+$scope module DUT[37] $end
+$var wire 1 h% a $end
+$var wire 1 % a_invert $end
+$var wire 1 i% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 j% carry_in $end
+$var wire 2 k% operation [1:0] $end
+$var reg 1 l% a_out $end
+$var reg 1 m% and_ $end
+$var reg 1 n% b_out $end
+$var reg 1 o% carry_out $end
+$var reg 1 p% or_ $end
+$var reg 1 q% result $end
+$var reg 1 r% sum $end
+$var reg 1 s% zf $end
+$upscope $end
+$scope module DUT[38] $end
+$var wire 1 t% a $end
+$var wire 1 % a_invert $end
+$var wire 1 u% b $end
+$var wire 1 ' b_invert $end
+$var wire 1 v% carry_in $end
+$var wire 2 w% operation [1:0] $end
+$var reg 1 x% a_out $end
+$var reg 1 y% and_ $end
+$var reg 1 z% b_out $end
+$var reg 1 {% carry_out $end
+$var reg 1 |% or_ $end
+$var reg 1 }% result $end
+$var reg 1 ~% sum $end
+$var reg 1 !& zf $end
+$upscope $end
+$scope module DUT[39] $end
+$var wire 1 "& a $end
+$var wire 1 % a_invert $end
+$var wire 1 #& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 $& carry_in $end
+$var wire 2 %& operation [1:0] $end
+$var reg 1 && a_out $end
+$var reg 1 '& and_ $end
+$var reg 1 (& b_out $end
+$var reg 1 )& carry_out $end
+$var reg 1 *& or_ $end
+$var reg 1 +& result $end
+$var reg 1 ,& sum $end
+$var reg 1 -& zf $end
+$upscope $end
+$scope module DUT[40] $end
+$var wire 1 .& a $end
+$var wire 1 % a_invert $end
+$var wire 1 /& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 0& carry_in $end
+$var wire 2 1& operation [1:0] $end
+$var reg 1 2& a_out $end
+$var reg 1 3& and_ $end
+$var reg 1 4& b_out $end
+$var reg 1 5& carry_out $end
+$var reg 1 6& or_ $end
+$var reg 1 7& result $end
+$var reg 1 8& sum $end
+$var reg 1 9& zf $end
+$upscope $end
+$scope module DUT[41] $end
+$var wire 1 :& a $end
+$var wire 1 % a_invert $end
+$var wire 1 ;& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 <& carry_in $end
+$var wire 2 =& operation [1:0] $end
+$var reg 1 >& a_out $end
+$var reg 1 ?& and_ $end
+$var reg 1 @& b_out $end
+$var reg 1 A& carry_out $end
+$var reg 1 B& or_ $end
+$var reg 1 C& result $end
+$var reg 1 D& sum $end
+$var reg 1 E& zf $end
+$upscope $end
+$scope module DUT[42] $end
+$var wire 1 F& a $end
+$var wire 1 % a_invert $end
+$var wire 1 G& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 H& carry_in $end
+$var wire 2 I& operation [1:0] $end
+$var reg 1 J& a_out $end
+$var reg 1 K& and_ $end
+$var reg 1 L& b_out $end
+$var reg 1 M& carry_out $end
+$var reg 1 N& or_ $end
+$var reg 1 O& result $end
+$var reg 1 P& sum $end
+$var reg 1 Q& zf $end
+$upscope $end
+$scope module DUT[43] $end
+$var wire 1 R& a $end
+$var wire 1 % a_invert $end
+$var wire 1 S& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 T& carry_in $end
+$var wire 2 U& operation [1:0] $end
+$var reg 1 V& a_out $end
+$var reg 1 W& and_ $end
+$var reg 1 X& b_out $end
+$var reg 1 Y& carry_out $end
+$var reg 1 Z& or_ $end
+$var reg 1 [& result $end
+$var reg 1 \& sum $end
+$var reg 1 ]& zf $end
+$upscope $end
+$scope module DUT[44] $end
+$var wire 1 ^& a $end
+$var wire 1 % a_invert $end
+$var wire 1 _& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 `& carry_in $end
+$var wire 2 a& operation [1:0] $end
+$var reg 1 b& a_out $end
+$var reg 1 c& and_ $end
+$var reg 1 d& b_out $end
+$var reg 1 e& carry_out $end
+$var reg 1 f& or_ $end
+$var reg 1 g& result $end
+$var reg 1 h& sum $end
+$var reg 1 i& zf $end
+$upscope $end
+$scope module DUT[45] $end
+$var wire 1 j& a $end
+$var wire 1 % a_invert $end
+$var wire 1 k& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 l& carry_in $end
+$var wire 2 m& operation [1:0] $end
+$var reg 1 n& a_out $end
+$var reg 1 o& and_ $end
+$var reg 1 p& b_out $end
+$var reg 1 q& carry_out $end
+$var reg 1 r& or_ $end
+$var reg 1 s& result $end
+$var reg 1 t& sum $end
+$var reg 1 u& zf $end
+$upscope $end
+$scope module DUT[46] $end
+$var wire 1 v& a $end
+$var wire 1 % a_invert $end
+$var wire 1 w& b $end
+$var wire 1 ' b_invert $end
+$var wire 1 x& carry_in $end
+$var wire 2 y& operation [1:0] $end
+$var reg 1 z& a_out $end
+$var reg 1 {& and_ $end
+$var reg 1 |& b_out $end
+$var reg 1 }& carry_out $end
+$var reg 1 ~& or_ $end
+$var reg 1 !' result $end
+$var reg 1 "' sum $end
+$var reg 1 #' zf $end
+$upscope $end
+$scope module DUT[47] $end
+$var wire 1 $' a $end
+$var wire 1 % a_invert $end
+$var wire 1 %' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 &' carry_in $end
+$var wire 2 '' operation [1:0] $end
+$var reg 1 (' a_out $end
+$var reg 1 )' and_ $end
+$var reg 1 *' b_out $end
+$var reg 1 +' carry_out $end
+$var reg 1 ,' or_ $end
+$var reg 1 -' result $end
+$var reg 1 .' sum $end
+$var reg 1 /' zf $end
+$upscope $end
+$scope module DUT[48] $end
+$var wire 1 0' a $end
+$var wire 1 % a_invert $end
+$var wire 1 1' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 2' carry_in $end
+$var wire 2 3' operation [1:0] $end
+$var reg 1 4' a_out $end
+$var reg 1 5' and_ $end
+$var reg 1 6' b_out $end
+$var reg 1 7' carry_out $end
+$var reg 1 8' or_ $end
+$var reg 1 9' result $end
+$var reg 1 :' sum $end
+$var reg 1 ;' zf $end
+$upscope $end
+$scope module DUT[49] $end
+$var wire 1 <' a $end
+$var wire 1 % a_invert $end
+$var wire 1 =' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 >' carry_in $end
+$var wire 2 ?' operation [1:0] $end
+$var reg 1 @' a_out $end
+$var reg 1 A' and_ $end
+$var reg 1 B' b_out $end
+$var reg 1 C' carry_out $end
+$var reg 1 D' or_ $end
+$var reg 1 E' result $end
+$var reg 1 F' sum $end
+$var reg 1 G' zf $end
+$upscope $end
+$scope module DUT[50] $end
+$var wire 1 H' a $end
+$var wire 1 % a_invert $end
+$var wire 1 I' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 J' carry_in $end
+$var wire 2 K' operation [1:0] $end
+$var reg 1 L' a_out $end
+$var reg 1 M' and_ $end
+$var reg 1 N' b_out $end
+$var reg 1 O' carry_out $end
+$var reg 1 P' or_ $end
+$var reg 1 Q' result $end
+$var reg 1 R' sum $end
+$var reg 1 S' zf $end
+$upscope $end
+$scope module DUT[51] $end
+$var wire 1 T' a $end
+$var wire 1 % a_invert $end
+$var wire 1 U' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 V' carry_in $end
+$var wire 2 W' operation [1:0] $end
+$var reg 1 X' a_out $end
+$var reg 1 Y' and_ $end
+$var reg 1 Z' b_out $end
+$var reg 1 [' carry_out $end
+$var reg 1 \' or_ $end
+$var reg 1 ]' result $end
+$var reg 1 ^' sum $end
+$var reg 1 _' zf $end
+$upscope $end
+$scope module DUT[52] $end
+$var wire 1 `' a $end
+$var wire 1 % a_invert $end
+$var wire 1 a' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 b' carry_in $end
+$var wire 2 c' operation [1:0] $end
+$var reg 1 d' a_out $end
+$var reg 1 e' and_ $end
+$var reg 1 f' b_out $end
+$var reg 1 g' carry_out $end
+$var reg 1 h' or_ $end
+$var reg 1 i' result $end
+$var reg 1 j' sum $end
+$var reg 1 k' zf $end
+$upscope $end
+$scope module DUT[53] $end
+$var wire 1 l' a $end
+$var wire 1 % a_invert $end
+$var wire 1 m' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 n' carry_in $end
+$var wire 2 o' operation [1:0] $end
+$var reg 1 p' a_out $end
+$var reg 1 q' and_ $end
+$var reg 1 r' b_out $end
+$var reg 1 s' carry_out $end
+$var reg 1 t' or_ $end
+$var reg 1 u' result $end
+$var reg 1 v' sum $end
+$var reg 1 w' zf $end
+$upscope $end
+$scope module DUT[54] $end
+$var wire 1 x' a $end
+$var wire 1 % a_invert $end
+$var wire 1 y' b $end
+$var wire 1 ' b_invert $end
+$var wire 1 z' carry_in $end
+$var wire 2 {' operation [1:0] $end
+$var reg 1 |' a_out $end
+$var reg 1 }' and_ $end
+$var reg 1 ~' b_out $end
+$var reg 1 !( carry_out $end
+$var reg 1 "( or_ $end
+$var reg 1 #( result $end
+$var reg 1 $( sum $end
+$var reg 1 %( zf $end
+$upscope $end
+$scope module DUT[55] $end
+$var wire 1 &( a $end
+$var wire 1 % a_invert $end
+$var wire 1 '( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 (( carry_in $end
+$var wire 2 )( operation [1:0] $end
+$var reg 1 *( a_out $end
+$var reg 1 +( and_ $end
+$var reg 1 ,( b_out $end
+$var reg 1 -( carry_out $end
+$var reg 1 .( or_ $end
+$var reg 1 /( result $end
+$var reg 1 0( sum $end
+$var reg 1 1( zf $end
+$upscope $end
+$scope module DUT[56] $end
+$var wire 1 2( a $end
+$var wire 1 % a_invert $end
+$var wire 1 3( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 4( carry_in $end
+$var wire 2 5( operation [1:0] $end
+$var reg 1 6( a_out $end
+$var reg 1 7( and_ $end
+$var reg 1 8( b_out $end
+$var reg 1 9( carry_out $end
+$var reg 1 :( or_ $end
+$var reg 1 ;( result $end
+$var reg 1 <( sum $end
+$var reg 1 =( zf $end
+$upscope $end
+$scope module DUT[57] $end
+$var wire 1 >( a $end
+$var wire 1 % a_invert $end
+$var wire 1 ?( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 @( carry_in $end
+$var wire 2 A( operation [1:0] $end
+$var reg 1 B( a_out $end
+$var reg 1 C( and_ $end
+$var reg 1 D( b_out $end
+$var reg 1 E( carry_out $end
+$var reg 1 F( or_ $end
+$var reg 1 G( result $end
+$var reg 1 H( sum $end
+$var reg 1 I( zf $end
+$upscope $end
+$scope module DUT[58] $end
+$var wire 1 J( a $end
+$var wire 1 % a_invert $end
+$var wire 1 K( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 L( carry_in $end
+$var wire 2 M( operation [1:0] $end
+$var reg 1 N( a_out $end
+$var reg 1 O( and_ $end
+$var reg 1 P( b_out $end
+$var reg 1 Q( carry_out $end
+$var reg 1 R( or_ $end
+$var reg 1 S( result $end
+$var reg 1 T( sum $end
+$var reg 1 U( zf $end
+$upscope $end
+$scope module DUT[59] $end
+$var wire 1 V( a $end
+$var wire 1 % a_invert $end
+$var wire 1 W( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 X( carry_in $end
+$var wire 2 Y( operation [1:0] $end
+$var reg 1 Z( a_out $end
+$var reg 1 [( and_ $end
+$var reg 1 \( b_out $end
+$var reg 1 ]( carry_out $end
+$var reg 1 ^( or_ $end
+$var reg 1 _( result $end
+$var reg 1 `( sum $end
+$var reg 1 a( zf $end
+$upscope $end
+$scope module DUT[60] $end
+$var wire 1 b( a $end
+$var wire 1 % a_invert $end
+$var wire 1 c( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 d( carry_in $end
+$var wire 2 e( operation [1:0] $end
+$var reg 1 f( a_out $end
+$var reg 1 g( and_ $end
+$var reg 1 h( b_out $end
+$var reg 1 i( carry_out $end
+$var reg 1 j( or_ $end
+$var reg 1 k( result $end
+$var reg 1 l( sum $end
+$var reg 1 m( zf $end
+$upscope $end
+$scope module DUT[61] $end
+$var wire 1 n( a $end
+$var wire 1 % a_invert $end
+$var wire 1 o( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 p( carry_in $end
+$var wire 2 q( operation [1:0] $end
+$var reg 1 r( a_out $end
+$var reg 1 s( and_ $end
+$var reg 1 t( b_out $end
+$var reg 1 u( carry_out $end
+$var reg 1 v( or_ $end
+$var reg 1 w( result $end
+$var reg 1 x( sum $end
+$var reg 1 y( zf $end
+$upscope $end
+$scope module DUT[62] $end
+$var wire 1 z( a $end
+$var wire 1 % a_invert $end
+$var wire 1 {( b $end
+$var wire 1 ' b_invert $end
+$var wire 1 |( carry_in $end
+$var wire 2 }( operation [1:0] $end
+$var reg 1 ~( a_out $end
+$var reg 1 !) and_ $end
+$var reg 1 ") b_out $end
+$var reg 1 #) carry_out $end
+$var reg 1 $) or_ $end
+$var reg 1 %) result $end
+$var reg 1 &) sum $end
+$var reg 1 ') zf $end
+$upscope $end
+$scope module DUT[63] $end
+$var wire 1 () a $end
+$var wire 1 % a_invert $end
+$var wire 1 )) b $end
+$var wire 1 ' b_invert $end
+$var wire 1 *) carry_in $end
+$var wire 2 +) operation [1:0] $end
+$var reg 1 ,) a_out $end
+$var reg 1 -) and_ $end
+$var reg 1 .) b_out $end
+$var reg 1 /) carry_out $end
+$var reg 1 0) or_ $end
+$var reg 1 1) result $end
+$var reg 1 2) sum $end
+$var reg 1 3) zf $end
+$upscope $end
+$scope module DUT0 $end
+$var wire 1 4) a $end
+$var wire 1 % a_invert $end
+$var wire 1 5) b $end
+$var wire 1 ' b_invert $end
+$var wire 1 ( carry_in $end
+$var wire 2 6) operation [1:0] $end
+$var reg 1 7) a_out $end
+$var reg 1 8) and_ $end
+$var reg 1 9) b_out $end
+$var reg 1 :) carry_out $end
+$var reg 1 ;) or_ $end
+$var reg 1 <) result $end
+$var reg 1 =) sum $end
+$var reg 1 >) zf $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0>)
+0=)
+1<)
+1;)
+1:)
+19)
+18)
+17)
+b0 6)
+15)
+14)
+13)
+02)
+01)
+10)
+1/)
+1.)
+0-)
+0,)
+b0 +)
+1*)
+1))
+0()
+1')
+0&)
+0%)
+1$)
+1#)
+1")
+0!)
+0~(
+b0 }(
+1|(
+1{(
+0z(
+1y(
+0x(
+0w(
+1v(
+1u(
+1t(
+0s(
+0r(
+b0 q(
+1p(
+1o(
+0n(
+1m(
+0l(
+0k(
+1j(
+1i(
+1h(
+0g(
+0f(
+b0 e(
+1d(
+1c(
+0b(
+1a(
+0`(
+0_(
+1^(
+1](
+1\(
+0[(
+0Z(
+b0 Y(
+1X(
+1W(
+0V(
+1U(
+0T(
+0S(
+1R(
+1Q(
+1P(
+0O(
+0N(
+b0 M(
+1L(
+1K(
+0J(
+1I(
+0H(
+0G(
+1F(
+1E(
+1D(
+0C(
+0B(
+b0 A(
+1@(
+1?(
+0>(
+1=(
+0<(
+0;(
+1:(
+19(
+18(
+07(
+06(
+b0 5(
+14(
+13(
+02(
+11(
+00(
+0/(
+1.(
+1-(
+1,(
+0+(
+0*(
+b0 )(
+1((
+1'(
+0&(
+1%(
+0$(
+0#(
+1"(
+1!(
+1~'
+0}'
+0|'
+b0 {'
+1z'
+1y'
+0x'
+1w'
+0v'
+0u'
+1t'
+1s'
+1r'
+0q'
+0p'
+b0 o'
+1n'
+1m'
+0l'
+1k'
+0j'
+0i'
+1h'
+1g'
+1f'
+0e'
+0d'
+b0 c'
+1b'
+1a'
+0`'
+1_'
+0^'
+0]'
+1\'
+1['
+1Z'
+0Y'
+0X'
+b0 W'
+1V'
+1U'
+0T'
+1S'
+0R'
+0Q'
+1P'
+1O'
+1N'
+0M'
+0L'
+b0 K'
+1J'
+1I'
+0H'
+1G'
+0F'
+0E'
+1D'
+1C'
+1B'
+0A'
+0@'
+b0 ?'
+1>'
+1='
+0<'
+1;'
+0:'
+09'
+18'
+17'
+16'
+05'
+04'
+b0 3'
+12'
+11'
+00'
+1/'
+0.'
+0-'
+1,'
+1+'
+1*'
+0)'
+0('
+b0 ''
+1&'
+1%'
+0$'
+1#'
+0"'
+0!'
+1~&
+1}&
+1|&
+0{&
+0z&
+b0 y&
+1x&
+1w&
+0v&
+1u&
+0t&
+0s&
+1r&
+1q&
+1p&
+0o&
+0n&
+b0 m&
+1l&
+1k&
+0j&
+1i&
+0h&
+0g&
+1f&
+1e&
+1d&
+0c&
+0b&
+b0 a&
+1`&
+1_&
+0^&
+1]&
+0\&
+0[&
+1Z&
+1Y&
+1X&
+0W&
+0V&
+b0 U&
+1T&
+1S&
+0R&
+1Q&
+0P&
+0O&
+1N&
+1M&
+1L&
+0K&
+0J&
+b0 I&
+1H&
+1G&
+0F&
+1E&
+0D&
+0C&
+1B&
+1A&
+1@&
+0?&
+0>&
+b0 =&
+1<&
+1;&
+0:&
+19&
+08&
+07&
+16&
+15&
+14&
+03&
+02&
+b0 1&
+10&
+1/&
+0.&
+1-&
+0,&
+0+&
+1*&
+1)&
+1(&
+0'&
+0&&
+b0 %&
+1$&
+1#&
+0"&
+1!&
+0~%
+0}%
+1|%
+1{%
+1z%
+0y%
+0x%
+b0 w%
+1v%
+1u%
+0t%
+1s%
+0r%
+0q%
+1p%
+1o%
+1n%
+0m%
+0l%
+b0 k%
+1j%
+1i%
+0h%
+1g%
+0f%
+0e%
+1d%
+1c%
+1b%
+0a%
+0`%
+b0 _%
+1^%
+1]%
+0\%
+1[%
+0Z%
+0Y%
+1X%
+1W%
+1V%
+0U%
+0T%
+b0 S%
+1R%
+1Q%
+0P%
+1O%
+0N%
+0M%
+1L%
+1K%
+1J%
+0I%
+0H%
+b0 G%
+1F%
+1E%
+0D%
+1C%
+0B%
+0A%
+1@%
+1?%
+1>%
+0=%
+0<%
+b0 ;%
+1:%
+19%
+08%
+17%
+06%
+05%
+14%
+13%
+12%
+01%
+00%
+b0 /%
+1.%
+1-%
+0,%
+1+%
+0*%
+0)%
+1(%
+1'%
+1&%
+0%%
+0$%
+b0 #%
+1"%
+1!%
+0~$
+1}$
+0|$
+0{$
+1z$
+1y$
+1x$
+0w$
+0v$
+b0 u$
+1t$
+1s$
+0r$
+1q$
+0p$
+0o$
+1n$
+1m$
+1l$
+0k$
+0j$
+b0 i$
+1h$
+1g$
+0f$
+1e$
+0d$
+0c$
+1b$
+1a$
+1`$
+0_$
+0^$
+b0 ]$
+1\$
+1[$
+0Z$
+1Y$
+0X$
+0W$
+1V$
+1U$
+1T$
+0S$
+0R$
+b0 Q$
+1P$
+1O$
+0N$
+1M$
+0L$
+0K$
+1J$
+1I$
+1H$
+0G$
+0F$
+b0 E$
+1D$
+1C$
+0B$
+1A$
+0@$
+0?$
+1>$
+1=$
+1<$
+0;$
+0:$
+b0 9$
+18$
+17$
+06$
+15$
+04$
+03$
+12$
+11$
+10$
+0/$
+0.$
+b0 -$
+1,$
+1+$
+0*$
+1)$
+0($
+0'$
+1&$
+1%$
+1$$
+0#$
+0"$
+b0 !$
+1~#
+1}#
+0|#
+1{#
+0z#
+0y#
+1x#
+1w#
+1v#
+0u#
+0t#
+b0 s#
+1r#
+1q#
+0p#
+1o#
+0n#
+0m#
+1l#
+1k#
+1j#
+0i#
+0h#
+b0 g#
+1f#
+1e#
+0d#
+1c#
+0b#
+0a#
+1`#
+1_#
+1^#
+0]#
+0\#
+b0 [#
+1Z#
+1Y#
+0X#
+1W#
+0V#
+0U#
+1T#
+1S#
+1R#
+0Q#
+0P#
+b0 O#
+1N#
+1M#
+0L#
+1K#
+0J#
+0I#
+1H#
+1G#
+1F#
+0E#
+0D#
+b0 C#
+1B#
+1A#
+0@#
+1?#
+0>#
+0=#
+1<#
+1;#
+1:#
+09#
+08#
+b0 7#
+16#
+15#
+04#
+13#
+02#
+01#
+10#
+1/#
+1.#
+0-#
+0,#
+b0 +#
+1*#
+1)#
+0(#
+1'#
+0&#
+0%#
+1$#
+1##
+1"#
+0!#
+0~"
+b0 }"
+1|"
+1{"
+0z"
+1y"
+0x"
+0w"
+1v"
+1u"
+1t"
+0s"
+0r"
+b0 q"
+1p"
+1o"
+0n"
+1m"
+0l"
+0k"
+1j"
+1i"
+1h"
+0g"
+0f"
+b0 e"
+1d"
+1c"
+0b"
+1a"
+0`"
+0_"
+1^"
+1]"
+1\"
+0["
+0Z"
+b0 Y"
+1X"
+1W"
+0V"
+1U"
+0T"
+0S"
+1R"
+1Q"
+1P"
+0O"
+0N"
+b0 M"
+1L"
+1K"
+0J"
+1I"
+0H"
+0G"
+1F"
+1E"
+1D"
+0C"
+0B"
+b0 A"
+1@"
+1?"
+0>"
+1="
+0<"
+0;"
+1:"
+19"
+18"
+07"
+06"
+b0 5"
+14"
+13"
+02"
+11"
+00"
+0/"
+1."
+1-"
+1,"
+0+"
+0*"
+b0 )"
+1("
+1'"
+0&"
+1%"
+0$"
+0#"
+1""
+1!"
+1~
+0}
+0|
+b0 {
+1z
+1y
+0x
+1w
+0v
+0u
+1t
+1s
+1r
+0q
+0p
+b0 o
+1n
+1m
+0l
+1k
+0j
+0i
+1h
+1g
+1f
+0e
+0d
+b0 c
+1b
+1a
+0`
+1_
+0^
+0]
+1\
+1[
+1Z
+0Y
+0X
+b0 W
+1V
+1U
+0T
+1S
+0R
+0Q
+1P
+1O
+1N
+0M
+0L
+b0 K
+1J
+1I
+0H
+1G
+0F
+0E
+1D
+1C
+1B
+0A
+0@
+b0 ?
+1>
+1=
+0<
+1;
+0:
+09
+18
+17
+16
+05
+04
+b0 3
+12
+11
+00
+b1111111111111111111111111111111111111111111111111111111111111111 /
+b1 .
+b1111111111111111111111111111111111111111111111111111111111111110 -
+b0 ,
+b1111111111111111111111111111111111111111111111111111111111111111 +
+b1 *
+b0 )
+0(
+0'
+b1111111111111111111111111111111111111111111111111111111111111111 &
+0%
+b1 $
+1#
+b1 "
+0!
+$end
+#10
+0;
+19
+0G
+1E
+0S
+1Q
+0_
+1]
+0k
+1i
+0w
+1u
+0%"
+1#"
+01"
+1/"
+0="
+1;"
+0I"
+1G"
+0U"
+1S"
+0a"
+1_"
+0m"
+1k"
+0y"
+1w"
+0'#
+1%#
+03#
+11#
+0?#
+1=#
+0K#
+1I#
+0W#
+1U#
+0c#
+1a#
+0o#
+1m#
+0{#
+1y#
+0)$
+1'$
+05$
+13$
+0A$
+1?$
+0M$
+1K$
+0Y$
+1W$
+0e$
+1c$
+0q$
+1o$
+0}$
+1{$
+0+%
+1)%
+07%
+15%
+0C%
+1A%
+0O%
+1M%
+0[%
+1Y%
+0g%
+1e%
+0s%
+1q%
+0!&
+1}%
+0-&
+1+&
+09&
+17&
+0E&
+1C&
+0Q&
+1O&
+0]&
+1[&
+0i&
+1g&
+0u&
+1s&
+0#'
+1!'
+0/'
+1-'
+0;'
+19'
+0G'
+1E'
+0S'
+1Q'
+0_'
+1]'
+0k'
+1i'
+0w'
+1u'
+0%(
+1#(
+01(
+1/(
+0=(
+1;(
+0I(
+1G(
+0U(
+1S(
+0a(
+1_(
+0m(
+1k(
+0y(
+1w(
+0')
+1%)
+b0 -
+03)
+b1111111111111111111111111111111111111111111111111111111111111111 "
+b1111111111111111111111111111111111111111111111111111111111111111 .
+11)
+b1 )
+b1 ,
+b1 3
+b1 ?
+b1 K
+b1 W
+b1 c
+b1 o
+b1 {
+b1 )"
+b1 5"
+b1 A"
+b1 M"
+b1 Y"
+b1 e"
+b1 q"
+b1 }"
+b1 +#
+b1 7#
+b1 C#
+b1 O#
+b1 [#
+b1 g#
+b1 s#
+b1 !$
+b1 -$
+b1 9$
+b1 E$
+b1 Q$
+b1 ]$
+b1 i$
+b1 u$
+b1 #%
+b1 /%
+b1 ;%
+b1 G%
+b1 S%
+b1 _%
+b1 k%
+b1 w%
+b1 %&
+b1 1&
+b1 =&
+b1 I&
+b1 U&
+b1 a&
+b1 m&
+b1 y&
+b1 ''
+b1 3'
+b1 ?'
+b1 K'
+b1 W'
+b1 c'
+b1 o'
+b1 {'
+b1 )(
+b1 5(
+b1 A(
+b1 M(
+b1 Y(
+b1 e(
+b1 q(
+b1 }(
+b1 +)
+b1 6)
+#20
+1;
+1!
+09
+1G
+0E
+1S
+0Q
+1_
+0]
+1k
+0i
+1w
+0u
+1%"
+0#"
+11"
+0/"
+1="
+0;"
+1I"
+0G"
+1U"
+0S"
+1a"
+0_"
+1m"
+0k"
+1y"
+0w"
+1'#
+0%#
+13#
+01#
+1?#
+0=#
+1K#
+0I#
+1W#
+0U#
+1c#
+0a#
+1o#
+0m#
+1{#
+0y#
+1)$
+0'$
+15$
+03$
+1A$
+0?$
+1M$
+0K$
+1Y$
+0W$
+1e$
+0c$
+1q$
+0o$
+1}$
+0{$
+1+%
+0)%
+17%
+05%
+1C%
+0A%
+1O%
+0M%
+1[%
+0Y%
+1g%
+0e%
+1s%
+0q%
+1!&
+0}%
+1-&
+0+&
+19&
+07&
+1E&
+0C&
+1Q&
+0O&
+1]&
+0[&
+1i&
+0g&
+1u&
+0s&
+1#'
+0!'
+1/'
+0-'
+1;'
+09'
+1G'
+0E'
+1S'
+0Q'
+1_'
+0]'
+1k'
+0i'
+1w'
+0u'
+1%(
+0#(
+11(
+0/(
+1=(
+0;(
+1I(
+0G(
+1U(
+0S(
+1a(
+0_(
+1m(
+0k(
+1y(
+0w(
+1')
+0%)
+13)
+01)
+b1111111111111111111111111111111111111111111111111111111111111111 -
+1>)
+b0 "
+b0 .
+0<)
+b10 )
+b10 ,
+b10 3
+b10 ?
+b10 K
+b10 W
+b10 c
+b10 o
+b10 {
+b10 )"
+b10 5"
+b10 A"
+b10 M"
+b10 Y"
+b10 e"
+b10 q"
+b10 }"
+b10 +#
+b10 7#
+b10 C#
+b10 O#
+b10 [#
+b10 g#
+b10 s#
+b10 !$
+b10 -$
+b10 9$
+b10 E$
+b10 Q$
+b10 ]$
+b10 i$
+b10 u$
+b10 #%
+b10 /%
+b10 ;%
+b10 G%
+b10 S%
+b10 _%
+b10 k%
+b10 w%
+b10 %&
+b10 1&
+b10 =&
+b10 I&
+b10 U&
+b10 a&
+b10 m&
+b10 y&
+b10 ''
+b10 3'
+b10 ?'
+b10 K'
+b10 W'
+b10 c'
+b10 o'
+b10 {'
+b10 )(
+b10 5(
+b10 A(
+b10 M(
+b10 Y(
+b10 e(
+b10 q(
+b10 }(
+b10 +)
+b10 6)
+#30

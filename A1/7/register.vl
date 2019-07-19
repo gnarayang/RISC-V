@@ -1,0 +1,15 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Building a 32 bit register using 32 D-flip flops
+
+module d_ff(d, clock, reset, q);
+	
+input d,clock,reset;
+output q;
+
+reg q;
+
+always @(posedge clock or reset) begin
+	q = d & reset;
+end
+
+endmodule

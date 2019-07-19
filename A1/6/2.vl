@@ -1,0 +1,22 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//D-flip flop using minized gate form
+
+module gate_model(d, clock, q, qbar);
+
+input d,clock;
+output q,qbar;
+
+wire s,r,lower,upper;
+
+nand g1(lower, d, r);
+nand g2(r, lower, s, clock);
+nand g3(s, clock, upper);
+nand g4(upper, s, lower);
+
+nand g_Q(q, s, qbar);
+nand g_Qbar(qbar, r, q);
+
+
+
+
+endmodule

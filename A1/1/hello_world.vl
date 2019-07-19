@@ -1,0 +1,21 @@
+//Project by Dhanasekhar.M 17CO214 and Narayan.G 17CO225
+//Printing hello world 100 times
+
+
+module hello_world(clock);
+
+input clock;
+
+initial
+	begin
+		$display("Timestamp ");
+	end
+
+always @(posedge clock)
+	begin
+		$display("   %g\t\t Hello World ",($time)/10 + 1);
+	end
+
+
+
+endmodule
